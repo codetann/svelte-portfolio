@@ -6,7 +6,7 @@
   <div class="heading__text">
     <Avatar
       size="md"
-      image="https://media.licdn.com/dms/image/C4E03AQEIMEQE0WtHkg/profile-displayphoto-shrink_400_400/0/1639533909203?e=1702512000&v=beta&t=Qwa1k62bhNIc2MbYX6XQQqdt2siy1fFKQquwRz3FaPU"
+      image="https://res.cloudinary.com/dchbfnubk/image/upload/v1706918133/portfolio/kfycg9upmihil4kbhvfl.jpg"
       title="Tanner Dolby"
     />
     <h2>Software Engineer, Freelancer, and Amateur Designer.</h2>

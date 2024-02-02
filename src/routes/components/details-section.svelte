@@ -1,29 +1,20 @@
 <script>
   import Job from "./job.svelte";
   import { Testimonial, Icon, Button } from "$lib/components";
+  import data from "../data/testimonial.json";
 </script>
 
 <section>
   <div class="details">
     <div class="testimonials">
-      <Testimonial
-        name="Clay Olsen"
-        title="CEO/Founder | Impact Suite"
-        image="https://media.licdn.com/dms/image/D5603AQEW7DaTogDbMg/profile-displayphoto-shrink_100_100/0/1695417691921?e=1702512000&v=beta&t=5iWOOODC0PJFudA2p55xdjxQRnShFlSYamEKUH-ezQo"
-        quote="Tanner is incredibly talented and amazing to work with. He's a hard worker and is willing to flex when needed. Any team would be lucky to have him!"
-      />
-      <Testimonial
-        name="Cashe Collins"
-        title="Senior Software Engineer"
-        image="https://media.licdn.com/dms/image/C5603AQHkEQ8jq0v09A/profile-displayphoto-shrink_100_100/0/1523466739398?e=1702512000&v=beta&t=EMZyBi6XJLhPuzfpH8lS_7zhz_XYZ3I719Q6DP-Vjkk"
-        quote="Tanner is one of the most talented developers I’ve worked with, and he’s just getting started. If you’re looking for an engineer with rediculous talent, gets along with your whole team, and can take your department to the next level you found your guy in Tanner."
-      />
-      <Testimonial
-        name="Zach Johnson"
-        title="Product Manager"
-        image="https://media.licdn.com/dms/image/C5603AQFpCo9JlAAIMQ/profile-displayphoto-shrink_100_100/0/1542654320258?e=1702512000&v=beta&t=X0CUWxSgdr5y6x_csOTqL40fVb5l0riE1n3dSbN2lSI"
-        quote="Tanner Thomas is simply amazing! I love this guy. Anyone who has the need for a ridiculously talented engineer please hit him up."
-      />
+      {#each data as testimonial}
+        <Testimonial
+          name={testimonial.name}
+          title={testimonial.title}
+          image={testimonial.image}
+          quote={testimonial.quote}
+        />
+      {/each}
     </div>
   </div>
   <aside class="work__card">
@@ -33,13 +24,13 @@
     </span>
     <div class="jobs">
       <Job
-        image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtSwB-NY-1cD3KDXLZOKtWq9S8G2eUnSDiGx4wwLbiTD_E4LHI"
+        image="https://res.cloudinary.com/dchbfnubk/image/upload/f_auto,q_auto/v1/portfolio/bkgshybmsknhuexsrstx"
         title="Fullstack Engineer"
         company="Paymentbox"
         date="2023 - Present"
       />
       <Job
-        image="https://nationalprocessing.com/wp-content/uploads/2021/07/cropped-NP_pckg_lgo_1024x1024.png"
+        image="https://res.cloudinary.com/dchbfnubk/image/upload/f_auto,q_auto/v1/portfolio/x3ljguevxahb0qgx3v63"
         title="Frontend Engineer"
         company="National Processing"
         date="2022 - Present"
