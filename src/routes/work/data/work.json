@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Developer / Mentor",
+    "company": "Devmountain",
+    "date": "August 2021",
+    "image": "https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750",
+    "highlights": [
+      "Mentored students through software development journey",
+      "Provided valuable support and advice",
+      "Continuously contribute through talks and insights"
+    ],
+    "description": "While also learning to code and attending Devmountain, I provided mentorship, support, and ongoing contributions to aspiring developers at Devmountain through pair programming, talks, and insights."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Impact Suite",
+    "date": "October 2021",
+    "image": "https://impactsuite.com/wp-content/uploads/2021/07/Impact-Suite-Logo-1.png",
+    "highlights": [
+      "Developed mental health, substance abuse, and parenting support apps.",
+      "Promoted to mid-level engineer within first year.",
+      "Led frontend development of admin panel."
+    ],
+    "description": "I was hired as a junior developer but was soon promoted to mid-level full-stack engineer, leading the development of mobile and web applications aimed at improving mental health, addressing substance abuse, and fostering parenting skills, notably leading the frontend design of a robust admin panel."
+  },
+  {
+    "title": "Frontend Engineer",
+    "company": "National Processing",
+    "date": "November 2022 - Present",
+    "image": "https://nationalprocessing.com/wp-content/uploads/2021/07/cropped-NP_pckg_lgo_1024x1024.png",
+    "highlights": [
+      "Led development as lead frontend engineer at National Processing",
+      "Developed a new web app and UI library",
+      "Expanded expertise to include full-stack responsibilities for seamless user experience"
+    ],
+    "description": "At National Processing, I took on the lead frontend engineer role, overseeing the development of a new web application and UI library, while also expanding my skills to cover full-stack responsibilities for a cohesive user experience and strong functionality."
+  },
+  {
+    "title": "Full Stack Developer",
+    "company": "PaymentBox",
+    "date": "October 2023 - Present",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtSwB-NY-1cD3KDXLZOKtWq9S8G2eUnSDiGx4wwLbiTD_E4LHI",
+    "highlights": [
+      "Developing and maintaining both the frontend and backend of the company's web applications",
+      "Working closely with the product and design teams to implement new features and improve the user experience",
+      "Contributing to the overall architecture and performance of the applications"
+    ],
+    "description": "At PaymentBox, I am responsible for developing and maintaining both the frontend and backend of the company's web applications. I work closely with the product and design teams to implement new features and improve the user experience. I also contribute to the overall architecture and performance of the applications."
+  }
+]

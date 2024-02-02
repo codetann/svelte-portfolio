@@ -1,0 +1,36 @@
+<script>
+  export let name = "name";
+  export let placeholder = "placeholder";
+</script>
+
+<input type="text" {name} {placeholder} />
+
+<style>
+  input {
+    width: 100%;
+    color: var(--white-alpha-700);
+    background: #1d1d1f;
+    border: 1px solid var(--white-alpha-200);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    font-weight: semi-bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+  }
+
+  input:hover {
+    opacity: 0.8;
+  }
+
+  input:focus {
+    border: 1px solid var(--yellow-400);
+    outline: none;
+    opacity: 1;
+    background: transparent;
+  }
+</style>

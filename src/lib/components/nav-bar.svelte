@@ -1,21 +1,17 @@
 <script>
-  const Astro = {
-    url: {
-      pathname: "/",
-    },
-  };
+  import { page } from "$app/stores";
 </script>
 
 <nav>
-  <a class={Astro.url.pathname === "/" ? "current" : ""} href="/">Home</a>
-  <a class={Astro.url.pathname === "/work" ? "current" : ""} href="/work"
+  <a class={$page.url.pathname === "/" ? "current" : ""} href="/">Home</a>
+  <a class={$page.url.pathname === "/work" ? "current" : ""} href="/work"
     >Work</a
   >
   <a
-    class={Astro.url.pathname === "/projects" ? "current" : ""}
+    class={$page.url.pathname === "/projects" ? "current" : ""}
     href="/projects">Projects</a
   >
-  <a class={Astro.url.pathname === "/contact" ? "current" : ""} href="/contact"
+  <a class={$page.url.pathname === "/contact" ? "current" : ""} href="/contact"
     >Contact</a
   >
 </nav>

@@ -1,33 +1,20 @@
 <script>
   import TimelineItem from "./timeline-item.svelte";
+  import data from "../data/work.json";
 </script>
 
 <section>
   <div class="timeline">
-    <TimelineItem
-      image="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750"
-      title="Developer / Mentor"
-      company="Devmountain"
-      date="August 2021"
-    />
-    <TimelineItem
-      image="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQka5gKFH5wutdc3Taqch-_DrTFbJSy31Z7Dti9fnGfFQ-Kk7tz"
-      title="Software Engineer"
-      company="Impact Suite"
-      date="October 2021 "
-    />
-    <TimelineItem
-      image="https://nationalprocessing.com/wp-content/uploads/2021/07/cropped-NP_pckg_lgo_1024x1024.png"
-      title="Frontend Engineer"
-      company="National Processing"
-      date="November 2022 - Present"
-    />
-    <TimelineItem
-      image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtSwB-NY-1cD3KDXLZOKtWq9S8G2eUnSDiGx4wwLbiTD_E4LHI"
-      title="Full Stack Developer"
-      company="PaymentBox"
-      date="October 2023 - Present"
-    />
+    {#each data as item}
+      <TimelineItem
+        image={item.image}
+        title={item.title}
+        company={item.company}
+        date={item.date}
+        description={item.description}
+        highlights={item.highlights}
+      />
+    {/each}
   </div>
 </section>
 

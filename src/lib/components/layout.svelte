@@ -30,5 +30,8 @@
     max-width: 1200px;
     border-left: 1px solid var(--brand-light-gray);
     border-right: 1px solid var(--brand-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 </style>

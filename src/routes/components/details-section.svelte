@@ -24,7 +24,6 @@
         image="https://media.licdn.com/dms/image/C5603AQFpCo9JlAAIMQ/profile-displayphoto-shrink_100_100/0/1542654320258?e=1702512000&v=beta&t=X0CUWxSgdr5y6x_csOTqL40fVb5l0riE1n3dSbN2lSI"
         quote="Tanner Thomas is simply amazing! I love this guy. Anyone who has the need for a ridiculously talented engineer please hit him up."
       />
-      <div class="time"></div>
     </div>
   </div>
   <aside class="work__card">
@@ -32,30 +31,33 @@
       <Icon size={22} name="breifcase" color="var(--yellow-400)" />
       <p>Work</p>
     </span>
-    <Job
-      image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtSwB-NY-1cD3KDXLZOKtWq9S8G2eUnSDiGx4wwLbiTD_E4LHI"
-      title="Fullstack Engineer"
-      company="Paymentbox"
-      date="2023 - Present"
-    />
-    <Job
-      image="https://nationalprocessing.com/wp-content/uploads/2021/07/cropped-NP_pckg_lgo_1024x1024.png"
-      title="Frontend Engineer"
-      company="National Processing"
-      date="2022 - Present"
-    />
-    <Job
-      image="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQka5gKFH5wutdc3Taqch-_DrTFbJSy31Z7Dti9fnGfFQ-Kk7tz"
-      title="Software Engineer"
-      company="Impact Suite"
-      date="2021 - 2022"
-    />
-    <Job
-      image="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750"
-      title="Developer / Mentor"
-      company="Devmountain"
-      date="2021 - 2021"
-    />
+    <div class="jobs">
+      <Job
+        image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtSwB-NY-1cD3KDXLZOKtWq9S8G2eUnSDiGx4wwLbiTD_E4LHI"
+        title="Fullstack Engineer"
+        company="Paymentbox"
+        date="2023 - Present"
+      />
+      <Job
+        image="https://nationalprocessing.com/wp-content/uploads/2021/07/cropped-NP_pckg_lgo_1024x1024.png"
+        title="Frontend Engineer"
+        company="National Processing"
+        date="2022 - Present"
+      />
+      <Job
+        image="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQka5gKFH5wutdc3Taqch-_DrTFbJSy31Z7Dti9fnGfFQ-Kk7tz"
+        title="Software Engineer"
+        company="Impact Suite"
+        date="2021 - 2022"
+      />
+      <Job
+        image="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750"
+        title="Developer / Mentor"
+        company="Devmountain"
+        date="2021 - 2021"
+      />
+    </div>
+
     <Button rightIcon="arrow-down" onClick={() => null} width="100%">
       Download CV
     </Button>
@@ -65,12 +67,12 @@
 <style>
   section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
     padding: var(--spacing-16);
-    gap: var(--spacing-8);
+    gap: var(--spacing-16);
   }
 
   @media (max-width: 768px) {
@@ -92,24 +94,6 @@
     min-height: 10rem;
   }
 
-  .testimonial__image {
-    height: 4rem;
-
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .heading__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    gap: var(--spacing-4);
-  }
-  .heading__text h2 {
-    max-width: 800px;
-  }
   .heading__text p {
     max-width: 750px;
   }
@@ -127,8 +111,14 @@
     gap: var(--spacing-16);
   }
 
+  .jobs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    width: 100%;
+  }
+
   .testimonials {
-    flex: 4;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-16);
@@ -184,9 +174,9 @@
   }
 
   @media screen and (max-width: 1000px) {
-    .details {
-      flex-direction: column-;
-      flex-wrap: wrap;
+    section {
+      flex-direction: column;
+      gap: var(--spacing-24);
     }
   }
 </style>

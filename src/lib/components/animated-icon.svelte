@@ -1,0 +1,67 @@
+<script lang="ts">
+  import Icon from "./icon.svelte";
+  export let size = 24;
+  export let color = "var(--white)";
+  export let icon = "twitter";
+  export let label = "twitter";
+
+  const randomCSSRotation = () => {
+    const rotations = [
+      "rotate(0deg)",
+      "rotate(20deg)",
+      "rotate(-20deg)",
+      "rotate(10deg)",
+      "rotate(-10deg)",
+      "rotate(5deg)",
+      "rotate(-5deg)",
+    ];
+    return rotations[Math.floor(Math.random() * rotations.length)];
+  };
+</script>
+
+<div>
+  <div class="icon" style="--color:{color}; --rotation:{randomCSSRotation()}">
+    <Icon name={icon} {size} />
+  </div>
+  <!-- <div class="tooltip">{label}</div> -->
+</div>
+
+<style lang="scss">
+  .icon {
+    transform: var(--rotation);
+  }
+  div {
+    /* color: var(--white-alpha-400); */
+    color: var(--color);
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  div:hover {
+    color: var(--color);
+    transform: scale(1.1);
+
+    .tooltip {
+      opacity: 1;
+    }
+  }
+
+  .tooltip {
+    transition: all 0.2s ease-in-out;
+    padding: 0.2rem;
+
+    background: var(--white-alpha-100);
+    color: var(--white);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0;
+
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+</style>

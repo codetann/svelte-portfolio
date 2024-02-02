@@ -1,30 +1,30 @@
-
 <script lang="ts">
-
   export let onClick = () => {};
   export let width = "fit";
   export let rightIcon = "";
   export let leftIcon = "";
   export let type: any = "button";
+
+  const styleVars = `--width: ${width};`;
 </script>
 
-<button type={type}>
+<button {type}>
   {#if leftIcon}
-    <i class={leftIcon} />
+    <i class={leftIcon} style={styleVars} />
   {/if}
 
   <slot />
 
   {#if rightIcon}
-    <i class={rightIcon} />
+    <i class={rightIcon} style={styleVars} />
   {/if}
 </button>
 
-<style define:vars={{ width }}>
+<style>
   button {
     color: var(--white-alpha-700);
     background: #1d1d1f;
-    width: var(--width);
+    width: 100%;
     border: 1px solid #1d1d1f;
     padding: 0.75rem 1.5rem;
     border-radius: var(--radius-md);
