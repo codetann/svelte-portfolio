@@ -1,0 +1,89 @@
+<script>
+  import { Avatar, IconLink } from "$lib/components";
+</script>
+
+<section>
+  <div class="heading__text">
+    <Avatar
+      size="md"
+      image="https://media.licdn.com/dms/image/C4E03AQEIMEQE0WtHkg/profile-displayphoto-shrink_400_400/0/1639533909203?e=1702512000&v=beta&t=Qwa1k62bhNIc2MbYX6XQQqdt2siy1fFKQquwRz3FaPU"
+      title="Tanner Dolby"
+    />
+    <h2>Software Engineer, Freelancer, and Amateur Designer.</h2>
+    <p>
+      I'm Tanner, a Software Engineer based in Lehi, Utah. My main goal is to
+      create engaging experiences for users, with a fine balance of technology
+      and design.
+    </p>
+  </div>
+  <div class="heading__icons">
+    <IconLink href="github.com" icon="fa-brands fa-github" />
+    <IconLink href="linkedin.com" icon="fa-brands fa-linkedin" />
+    <IconLink href="twitter.com" icon="fa-brands fa-twitter" />
+    <IconLink href="mailto:me@tannerthomas.dev" icon="fa-solid fa-envelope" />
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: var(--spacing-16);
+    gap: var(--spacing-8);
+    padding-bottom: var(--spacing-28);
+  }
+
+  .heading__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: var(--spacing-4);
+    padding-top: var(--spacing-28);
+  }
+  .heading__text h2 {
+    max-width: 800px;
+    color: var(--yellow-400);
+  }
+  .heading__text p {
+    max-width: 750px;
+  }
+  .heading__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-4);
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    h2 {
+      width: 100%;
+      font-size: 2.5rem;
+      text-align: left;
+      margin-top: 1rem;
+      font-weight: var(--font-weight-black);
+    }
+
+    section {
+      padding: var(--spacing-6);
+      padding-top: var(--spacing-18);
+
+      padding-bottom: var(--spacing-28);
+
+      margin-top: 5rem;
+    }
+    .heading__text {
+      padding-top: var(--spacing-16);
+
+      text-align: left;
+      justify-content: center !important;
+    }
+  }
+</style>

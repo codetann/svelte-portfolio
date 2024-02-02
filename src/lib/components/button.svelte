@@ -1,0 +1,55 @@
+
+<script lang="ts">
+
+  export let onClick = () => {};
+  export let width = "fit";
+  export let rightIcon = "";
+  export let leftIcon = "";
+  export let type: any = "button";
+</script>
+
+<button type={type}>
+  {#if leftIcon}
+    <i class={leftIcon} />
+  {/if}
+
+  <slot />
+
+  {#if rightIcon}
+    <i class={rightIcon} />
+  {/if}
+</button>
+
+<style define:vars={{ width }}>
+  button {
+    color: var(--white-alpha-700);
+    background: #1d1d1f;
+    width: var(--width);
+    border: 1px solid #1d1d1f;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    font-weight: semi-bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+  }
+
+  button:hover {
+    transform: translateY(-1px);
+    color: var(--white-alpha-900) !important;
+  }
+
+  button:active {
+    transform: scale(0.98);
+    color: var(--white-alpha-900);
+  }
+
+  button:focus {
+    outline: none;
+    border: 1px solid var(--yellow-400);
+  }
+</style>

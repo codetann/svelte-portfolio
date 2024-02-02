@@ -1,0 +1,60 @@
+<script>
+  export let image = "https://via.placeholder.com/150";
+  export let name = "Name";
+  export let title = "Title";
+  export let quote = "I'm a testimonial";
+
+  import Avatar from "./avatar.svelte";
+</script>
+
+<div class="container">
+  <div class="row">
+    <Avatar {image} title={name} />
+    <div class="col">
+      <p class="name">{name}</p>
+      <p class="title">{title}</p>
+    </div>
+  </div>
+  <p class="quote">"{quote}"</p>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .row {
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: center;
+    justify-content: flex-start;
+  }
+  img {
+  }
+  .name {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--white-alpha-900);
+
+    margin-bottom: -0.4rem;
+  }
+  .title {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+    color: var(--white-alpha-800);
+    color: var(--yellow-400);
+
+    /* color: yellow; */
+  }
+  .quote {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
+    color: var(--white-alpha-700);
+  }
+</style>

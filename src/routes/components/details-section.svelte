@@ -1,0 +1,192 @@
+<script>
+  import Job from "./job.svelte";
+  import { Testimonial, Icon, Button } from "$lib/components";
+</script>
+
+<section>
+  <div class="details">
+    <div class="testimonials">
+      <Testimonial
+        name="Clay Olsen"
+        title="CEO/Founder | Impact Suite"
+        image="https://media.licdn.com/dms/image/D5603AQEW7DaTogDbMg/profile-displayphoto-shrink_100_100/0/1695417691921?e=1702512000&v=beta&t=5iWOOODC0PJFudA2p55xdjxQRnShFlSYamEKUH-ezQo"
+        quote="Tanner is incredibly talented and amazing to work with. He's a hard worker and is willing to flex when needed. Any team would be lucky to have him!"
+      />
+      <Testimonial
+        name="Cashe Collins"
+        title="Senior Software Engineer"
+        image="https://media.licdn.com/dms/image/C5603AQHkEQ8jq0v09A/profile-displayphoto-shrink_100_100/0/1523466739398?e=1702512000&v=beta&t=EMZyBi6XJLhPuzfpH8lS_7zhz_XYZ3I719Q6DP-Vjkk"
+        quote="Tanner is one of the most talented developers I’ve worked with, and he’s just getting started. If you’re looking for an engineer with rediculous talent, gets along with your whole team, and can take your department to the next level you found your guy in Tanner."
+      />
+      <Testimonial
+        name="Zach Johnson"
+        title="Product Manager"
+        image="https://media.licdn.com/dms/image/C5603AQFpCo9JlAAIMQ/profile-displayphoto-shrink_100_100/0/1542654320258?e=1702512000&v=beta&t=X0CUWxSgdr5y6x_csOTqL40fVb5l0riE1n3dSbN2lSI"
+        quote="Tanner Thomas is simply amazing! I love this guy. Anyone who has the need for a ridiculously talented engineer please hit him up."
+      />
+      <div class="time"></div>
+    </div>
+  </div>
+  <aside class="work__card">
+    <span>
+      <Icon size={22} name="breifcase" color="var(--yellow-400)" />
+      <p>Work</p>
+    </span>
+    <Job
+      image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtSwB-NY-1cD3KDXLZOKtWq9S8G2eUnSDiGx4wwLbiTD_E4LHI"
+      title="Fullstack Engineer"
+      company="Paymentbox"
+      date="2023 - Present"
+    />
+    <Job
+      image="https://nationalprocessing.com/wp-content/uploads/2021/07/cropped-NP_pckg_lgo_1024x1024.png"
+      title="Frontend Engineer"
+      company="National Processing"
+      date="2022 - Present"
+    />
+    <Job
+      image="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQka5gKFH5wutdc3Taqch-_DrTFbJSy31Z7Dti9fnGfFQ-Kk7tz"
+      title="Software Engineer"
+      company="Impact Suite"
+      date="2021 - 2022"
+    />
+    <Job
+      image="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750"
+      title="Developer / Mentor"
+      company="Devmountain"
+      date="2021 - 2021"
+    />
+    <Button rightIcon="arrow-down" onClick={() => null} width="100%">
+      Download CV
+    </Button>
+  </aside>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: var(--spacing-16);
+    gap: var(--spacing-8);
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding: var(--spacing-4);
+    }
+  }
+
+  .time {
+    display: flex;
+    /* background: #1d1d1f; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2);
+    height: 100%;
+    border-radius: var(--radius-xl);
+    /* border: 1px solid var(--white-alpha-200); */
+    min-height: 10rem;
+  }
+
+  .testimonial__image {
+    height: 4rem;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .heading__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: var(--spacing-4);
+  }
+  .heading__text h2 {
+    max-width: 800px;
+  }
+  .heading__text p {
+    max-width: 750px;
+  }
+  .heading__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-8);
+  }
+
+  .details {
+    display: flex;
+    gap: var(--spacing-16);
+  }
+
+  .testimonials {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+  }
+
+  .detail__cards {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+  }
+
+  .contact__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: var(--spacing-4);
+    border: 1px solid var(--white-alpha-200);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-4);
+  }
+
+  .work__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: var(--spacing-4);
+    border: 1px solid var(--white-alpha-200);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-4);
+  }
+  aside > span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2-5);
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  aside > span > p {
+    color: var(--white);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .icons {
+    display: flex;
+    gap: var(--spacing-8);
+  }
+
+  @media screen and (max-width: 1000px) {
+    .details {
+      flex-direction: column-;
+      flex-wrap: wrap;
+    }
+  }
+</style>
