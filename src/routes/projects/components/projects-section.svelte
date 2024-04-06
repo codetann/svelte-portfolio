@@ -1,33 +1,18 @@
 <script>
   import Project from "./project-card.svelte";
+  import data from "../data/projects.json";
 </script>
 
 <section>
   <div class="grid">
-    <Project
-      image="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750"
-      url="github.com"
-      title="Developer / Mentor"
-      description="nec ultricies nisl nisl nec nisl. Sed euismod, diam id tincidunt ultrices."
-    />
-    <Project
-      image="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750"
-      url="github.com"
-      title="Developer / Mentor"
-      description="nec ultricies nisl nisl nec nisl. Sed euismod, diam id tincidunt ultrices."
-    />
-    <Project
-      image="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750"
-      url="github.com"
-      title="Developer / Mentor"
-      description="nec ultricies nisl nisl nec nisl. Sed euismod, diam id tincidunt ultrices."
-    />
-    <Project
-      image="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/devmountain/original.png?1568083750"
-      url="github.com"
-      title="Developer / Mentor"
-      description="nec ultricies nisl nisl nec nisl. Sed euismod, diam id tincidunt ultrices."
-    />
+    {#each data as project}
+      <Project
+        icon={project.icon}
+        url={project.url}
+        title={project.title}
+        description={project.description}
+      />
+    {/each}
   </div>
 </section>
 

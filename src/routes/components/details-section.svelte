@@ -113,6 +113,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-16);
+    max-width: 1600px;
   }
 
   .detail__cards {

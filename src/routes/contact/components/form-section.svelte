@@ -18,11 +18,11 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: var(--spacing-8);
+    padding: var(--spacing-6);
   }
   form {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-6);

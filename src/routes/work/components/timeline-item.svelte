@@ -70,6 +70,7 @@
     display: flex;
     color: white;
     line-height: 1.2rem;
+    font-size: 0.8rem;
   }
 
   .details {

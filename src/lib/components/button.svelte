@@ -4,11 +4,13 @@
   export let rightIcon = "";
   export let leftIcon = "";
   export let type: any = "button";
+  export let variant: any = "primary";
+  export let className = "";
 
   const styleVars = `--width: ${width};`;
 </script>
 
-<button {type}>
+<button class="{variant} {className}" {type}>
   {#if leftIcon}
     <i class={leftIcon} style={styleVars} />
   {/if}
@@ -50,6 +52,12 @@
 
   button:focus {
     outline: none;
+    border: 1px solid var(--yellow-400);
+  }
+
+  .secondary {
+    background: var(--yellow-400);
+    color: var(--black-alpha-900);
     border: 1px solid var(--yellow-400);
   }
 </style>

@@ -21,6 +21,8 @@
     justify-content: center;
     gap: 0.5rem;
     font-size: var(--font-size-sm);
+    resize: vertical;
+    min-height: 200px;
   }
 
   textarea:focus {

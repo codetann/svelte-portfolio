@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Liiinks",
+    "tags": ["React", "Chakra UI", "Netlify"],
+    "description": "All my important links in one place.",
+    "github": "",
+    "url": "https://mylinks.netlify.app/",
+    "color": "",
+    "icon": "list"
+  },
+  {
+    "title": "Pixels",
+    "tags": ["React", "Pexels API", "React-Router"],
+    "description": "Free stock photos and videos.",
+    "github": "",
+    "url": "https://mylinks.netlify.app/",
+    "color": "",
+    "icon": "camera"
+  },
+  {
+    "title": "Qwiz",
+    "tags": ["React", "Styled-Components", "Firebase"],
+    "description": "A basic quiz app to test your knowledge about anything and everything.",
+    "github": "",
+    "url": "https://mylinks.netlify.app/",
+    "color": "",
+    "icon": "award"
+  },
+  {
+    "title": "Foody",
+    "tags": ["React", "Styled-Components", "Firebase"],
+    "description": "Tinder meets food. Join friends and find the perfect restaurant.",
+    "github": "",
+    "url": "https://mylinks.netlify.app/",
+    "color": "",
+    "icon": "pizza"
+  }
+]

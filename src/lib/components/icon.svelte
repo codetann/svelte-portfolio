@@ -25,6 +25,11 @@
     ["nodejs"]: "devicon-nodejs-plain colored",
     ["php"]: "devicon-php-plain colored",
     ["dart"]: "devicon-dart-plain colored",
+    ["list"]: "fa-solid fa-list",
+    ["camera"]: "fa-solid fa-camera",
+    ["award"]: "fa-solid fa-award",
+    ["pizza"]: "fa-solid fa-pizza-slice",
+    ["github"]: "fa-brands fa-github",
   };
 </script>
 

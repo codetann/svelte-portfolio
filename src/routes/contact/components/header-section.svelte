@@ -1,5 +1,5 @@
 <section>
-  <h2>Let get in touch.</h2>
+  <h2>Let's get in touch.</h2>
   <p>
     I'm always open to new projects and opportunities. If you have a project
     that you want to get started, think you need my help with something or just

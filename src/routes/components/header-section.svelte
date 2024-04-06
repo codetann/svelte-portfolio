@@ -9,7 +9,7 @@
       image="https://res.cloudinary.com/dchbfnubk/image/upload/v1706918133/portfolio/kfycg9upmihil4kbhvfl.jpg"
       title="Tanner Dolby"
     />
-    <h2>Software Engineer, Freelancer, and Amateur Designer.</h2>
+    <h2>Software Engineer, Freelancer, and Photographer.</h2>
     <p>
       I'm Tanner, a Software Engineer based in Lehi, Utah. My main goal is to
       create engaging experiences for users, with a fine balance of technology

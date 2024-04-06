@@ -1,11 +1,18 @@
 <script>
+  import Icon from "./icon.svelte";
   export let size = "sm";
-  export let image = "https://avatars.githubusercontent.com/u/7221389?v=4";
+  export let image = false;
+  export let icon = "";
   export let title = "Avatar";
 </script>
 
 <div class={size}>
-  <img src={image} alt={title} />
+  {#if image}
+    <img src={image} alt={title} />
+  {/if}
+  {#if icon}
+    <Icon name={icon} />
+  {/if}
 </div>
 
 <style>

@@ -9,7 +9,7 @@
 
 <style>
   a {
-    background: var(--white-alpha-100);
+    background: var(--white-alpha-50);
     padding: 0.5rem;
     border-radius: var(--radius-lg);
   }
