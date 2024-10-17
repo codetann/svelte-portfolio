@@ -29,9 +29,11 @@
     </p>
   </div>
   <div class="heading__icons">
-    <IconLink href="github.com" icon="fa-brands fa-github" />
-    <IconLink href="linkedin.com" icon="fa-brands fa-linkedin" />
-    <IconLink href="twitter.com" icon="fa-brands fa-twitter" />
+    <IconLink href="https://github.com/codetann" icon="fa-brands fa-github" />
+    <IconLink
+      href="https://www.linkedin.com/in/tanner-thomas/"
+      icon="fa-brands fa-linkedin"
+    />
     <IconLink href="mailto:me@tannerthomas.dev" icon="fa-solid fa-envelope" />
   </div>
 </section>
