@@ -30,6 +30,14 @@
     ["award"]: "fa-solid fa-award",
     ["pizza"]: "fa-solid fa-pizza-slice",
     ["github"]: "fa-brands fa-github",
+    ["youtube"]: "fa-brands fa-youtube",
+    ["instagram"]: "fa-brands fa-instagram",
+    ["linkedin"]: "fa-brands fa-linkedin",
+    ["golf"]: "fa-solid fa-golf-ball",
+    ["video"]: "fa-solid fa-video",
+    ["code"]: "fa-solid fa-code",
+    ["spotify"]: "fa-brands fa-spotify",
+    ["link"]: "fa-solid fa-arrow-up-right-from-square",
   };
 </script>
 

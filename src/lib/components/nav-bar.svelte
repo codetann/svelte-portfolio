@@ -1,8 +1,21 @@
-<script>
+<script lang="ts">
   import { page } from "$app/stores";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector("nav") as any;
+
+      if (window.scrollY < 20) {
+        nav.classList.toggle("scroll", true);
+      } else {
+        nav.classList.toggle("scroll", false);
+      }
+    });
+  });
 </script>
 
-<nav>
+<nav class="scroll">
   <a class={$page.url.pathname === "/" ? "current" : ""} href="/">Home</a>
   <a class={$page.url.pathname === "/work" ? "current" : ""} href="/work"
     >Work</a
@@ -28,14 +41,22 @@
     background: #202021;
     border: 1px solid var(--white-alpha-100);
     blur: 5px;
-    padding: var(--spacing-1-5);
     position: fixed;
     top: 1rem;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%) scale(1) translateY(1px);
     box-shadow: var(--shadow-md);
     z-index: 9999;
-    padding: 0 var(--spacing-5);
+    padding: var(--spacing-5) var(--spacing-4);
+    transition: all 0.15s ease-out;
+  }
+
+  .scroll {
+    background: transparent;
+    border: 1px solid transparent;
+    box-shadow: none;
+
+    transform: translateX(50%) scale(0.99);
   }
 
   a {

@@ -1,10 +1,10 @@
 <section>
   <h2>A breif look at my employment history.</h2>
   <p>
-    I’ve worked on tons of little projects over the years but these are the ones
-    that I’m most proud of. Many of them are open-source, so if you see
-    something that piques your interest, check out the code and contribute if
-    you have ideas for how it can be improved.
+    Over the years I have worked with many talented individuals and companies
+    and have gained a wealth of experience in the process. I have worked in a
+    variety of roles and have been involved in many different projects and used
+    many different technologies.
   </p>
 </section>
 

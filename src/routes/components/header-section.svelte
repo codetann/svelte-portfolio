@@ -9,11 +9,23 @@
       image="https://res.cloudinary.com/dchbfnubk/image/upload/v1706918133/portfolio/kfycg9upmihil4kbhvfl.jpg"
       title="Tanner Dolby"
     />
-    <h2>Software Engineer, Freelancer, and Photographer.</h2>
+    <h2>Software Engineer, Photographer, and Golfer.</h2>
     <p>
       I'm Tanner, a Software Engineer based in Lehi, Utah. My main goal is to
       create engaging experiences for users, with a fine balance of technology
       and design.
+    </p>
+
+    <p>
+      <b style="color: var(--yellow-400);"> -> </b>Professional Photographer &
+      Videographer
+      <b style="color: var(--yellow-400);"> | </b>
+      <i style="opacity: .6;">Weddings, Families, Portrait</i>
+    </p>
+    <p>
+      <b style="color: var(--yellow-400);"> -> </b> Below average golfer
+      <b style="color: var(--yellow-400);"> | </b>
+      <i style="opacity: .6;">Lets golf</i>
     </p>
   </div>
   <div class="heading__icons">
