@@ -24,9 +24,9 @@
     class={$page.url.pathname === "/projects" ? "current" : ""}
     href="/projects">Projects</a
   >
-  <a class={$page.url.pathname === "/contact" ? "current" : ""} href="/contact"
+  <!-- <a class={$page.url.pathname === "/contact" ? "current" : ""} href="/contact"
     >Contact</a
-  >
+  > -->
 </nav>
 
 <style>

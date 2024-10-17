@@ -49,7 +49,19 @@
       />
     </div>
 
-    <Button rightIcon="arrow-down" onClick={() => null} width="100%">
+    <Button
+      rightIcon="arrow-down"
+      onClick={() => {
+        const url = "/tanner-thomas-resume.pdf";
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "tanner-thomas-resume.pdf");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }}
+      width="100%"
+    >
       Download CV
     </Button>
   </aside>

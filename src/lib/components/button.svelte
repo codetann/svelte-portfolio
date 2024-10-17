@@ -10,7 +10,7 @@
   const styleVars = `--width: ${width};`;
 </script>
 
-<button class="{variant} {className}" {type}>
+<button class="{variant} {className}" {type} on:click={onClick}>
   {#if leftIcon}
     <i class={leftIcon} style={styleVars} />
   {/if}

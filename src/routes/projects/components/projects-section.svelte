@@ -5,14 +5,15 @@
 
 <section>
   <div class="grid">
-    {#each data as project}
+    <p>Projects coming soon...</p>
+    <!-- {#each data as project}
       <Project
         icon={project.icon}
         url={project.url}
         title={project.title}
         description={project.description}
       />
-    {/each}
+    {/each} -->
   </div>
 </section>
 
@@ -26,7 +27,7 @@
     padding: 0 var(--spacing-16);
     gap: var(--spacing-8);
     padding-bottom: var(--spacing-28);
-    margin-top: var(--spacing-16);
+    /* margin-top: var(--spacing-16); */
   }
 
   .grid {

@@ -7,7 +7,7 @@
     <a href="/" class="link">Home</a>
     <a href="/work" class="link">Work</a>
     <a href="/projects" class="link">Projects</a>
-    <a href="/contact" class="link">Contact</a>
+    <!-- <a href="/contact" class="link">Contact</a> -->
   </div>
   <div class="message">
     <!-- <Icon name="svelte" /> -->
